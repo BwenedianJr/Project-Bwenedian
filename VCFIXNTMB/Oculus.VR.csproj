@@ -1,0 +1,981 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LangVersion>9.0</LangVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.20506</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <RootNamespace></RootNamespace>
+    <ProjectGuid>{FEFEE161-9076-DAFD-6189-D1E186CEBDD0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <AssemblyName>Oculus.VR</AssemblyName>
+    <TargetFrameworkVersion>v4.7.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <BaseDirectory>.</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Temp\Bin\Debug\</OutputPath>
+    <DefineConstants>UNITY_2021_2_18;UNITY_2021_2;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;USE_SEARCH_TABLE;USE_SEARCH_MODULE;USE_PROPERTY_DATABASE;USE_SEARCH_EXTENSION_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Temp\bin\Release\</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoWarn>0169</NoWarn>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoConfig>true</NoConfig>
+    <NoStdLib>true</NoStdLib>
+    <AddAdditionalExplicitAssemblyReferences>false</AddAdditionalExplicitAssemblyReferences>
+    <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
+    <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Package</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>2.0.14</UnityProjectGeneratorVersion>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>2021.2.18f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Analyzer Include="C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EIOBufferError.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRPlayerController.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\HmdRect2_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_HapticVibration_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_WebConsole_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\Assets\OVR\Scripts\RangedRecord.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRComposition.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRExternalComposition.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EOverlayDirection.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRSimpleJSON\JSONString.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRMesh.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRMixedRealityCaptureTest.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRSimpleJSON\JSON.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVROverlay.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVROverlayError.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\CVROverlay.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\IVRInput.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\ETrackedPropertyError.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRSimpleJSON\JSONContainerType.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRSimpleJSON\JSONTextMode.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\IVRScreenshots.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EIOBufferMode.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRDirectComposition.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRNotificationStyle.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\HmdMatrix34_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRScreenFade.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EDeviceActivityLevel.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\D3D12TextureData_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\IVRSettings.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRCameraRig.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\RenderModel_t_Packed.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\ETrackingResult.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRSceneLoader.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\Assets\OVR\Scripts\FixRecord.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\UnityEngine\EventSystems\OVRPhysicsRaycaster.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRApplicationTransitionState.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VROverlayTransformType.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRCubemapCapture.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\CVRSpatialAnchors.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\Imu_OffScaleFlags.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVSync.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_Reserved_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\COpenVRContext.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRSimpleJSON\JSONArray.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRSystemPerfMetrics.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\HmdVector2_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRRenderModelError.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EHiddenAreaMeshType.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRMixedRealityCaptureSettings.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_InputBindingLoad_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\CVRSettingHelper.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRGrabber.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRLayerAttribute.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\HmdVector3d_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRControllerEventOutputType.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\CVRIOBuffer.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\OpenVRInterop.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRNotificationType.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVROverlayIntersectionMaskPrimitiveType.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VRControllerAxis_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRChromaticAberration.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\HmdMatrix44_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\CVRDriverManager.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\NotificationBitmap_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\IVRIOBuffer.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRCustomSkeleton.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\HmdVector4_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRDebugHeadController.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\CameraVideoStreamFrameHeader_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\OpenVR.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VRTextureWithPoseAndDepth_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRSubmitFlags.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_Keyboard_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\IVRTrackedCamera.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_TouchPadMove_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_EditingCameraSurface_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_MessageOverlay_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\IVRNotifications.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\RenderModel_Vertex_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\InputSkeletalActionData_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRButtonId.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRInput.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRApplicationType.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EColorSpace.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\HmdQuaternionf_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRModeParms.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRBone.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\NodeStatePropertyType.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRTrackedCameraError.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRPlatformMenu.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\UnityEngine\EventSystems\OVRInputModule.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\Texture_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRSimpleJSON\JSONNodeType.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_Scroll_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EGamepadTextInputMode.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VRTextureWithPose_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\IVRChaperone.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_PerformanceTest_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRMonoscopic.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\IVRSpatialAnchors.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVROverlayMeshGenerator.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_Mouse_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VRControllerState_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRApplicationProperty.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EGamepadTextInputLineMode.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\RenderModel_TextureMap_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VROverlayInputMethod.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_Status_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRFirmwareError.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVREye.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRProfile.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRSkeletalMotionRange.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRControllerHelper.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRScreenshotError.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRState.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRGridCube.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VRActiveActionSet_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRScreenshotPropertyFilenames.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_DualAnalog_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRAutoDestroyInMRC.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_SeatedZeroPoseReset_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRWaitCursor.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRNodeStateProperties.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\Compositor_FrameTiming.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\DriverDirectMode_FrameTiming.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\IntersectionMaskRectangle_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRHand.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\IVRResources.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRExtensions.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRResources.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRSimpleJSON\JSONLazyCreator.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRSimpleJSON\JSONObject.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\CVRTrackedCamera.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\IVRRenderModels.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_Screenshot_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRPlugin.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRCompositorTimingMode.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRRaycaster.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\HmdVector3_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRInitError.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\RenderModel_ComponentState_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\IVRApplications.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\HiddenAreaMesh_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_Overlay_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_t_Packed.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRControllerAxisType.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRApplicationError.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRSkeleton.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRHaptics.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VROverlayIntersectionMaskPrimitive_Data_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VROverlayIntersectionResults_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRPose.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VRTextureBounds_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\UnityEngine\EventSystems\PointerEventDataExtension.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_Notification_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\ETrackedControllerRole.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRNativeBuffer.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\CVRApplications.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRCameraComposition.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_SpatialAnchor_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_Chaperone_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRSkeletalTransformSpace.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRSimpleJSON\JSONNode.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VRControllerState_t_Packed.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\CVRRenderModels.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\Assets\OVR\Scripts\FixMethodDelegate.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRSimpleJSON\JSONNumber.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\Properties\AssemblyInfo.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_Ipd_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRDisplay.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VRTextureWithDepth_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VRTextureDepthInfo_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\Compositor_OverlaySettings.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\InputOriginInfo_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRSimpleJSON\JSONBool.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRAudioSourceTest.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRScreenshotType.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\Assets\OVR\Scripts\Record.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRResetOrientation.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\IVRCompositor.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRNotificationError.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRTrackedCameraFrameLayout.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRSkeletonRenderer.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VROverlayIntersectionParams_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VRBoneTransform_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRSettingsError.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRSimpleJSON\JSONNull.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRMouseButton.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\CVRSettings.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\HmdQuad_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\RenderModel_TextureMap_t_Packed.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VRVulkanTextureData_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\CVRResources.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRNetwork.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\RenderModel_ControllerMode_State_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EDualAnalogWhich.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRBoundary.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\Compositor_CumulativeStats.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\ImuSample_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_ScreenshotProgress_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRProgressIndicator.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\RenderModel_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EChaperoneConfigFile.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\ETrackedDeviceClass.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_Controller_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRTracker.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\CVRNotifications.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_Property_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_Process_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\IVRDriverManager.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\AppOverrideKeys_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRSceneSampleController.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRDebugInfo.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\HmdColor_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\HmdQuaternion_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\ETextureType.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\InputDigitalActionData_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRSandwichComposition.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\CVRExtendedDisplay.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRMuraCorrectionMode.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_Data_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRGrabbable.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRHapticsClip.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRHeadsetEmulator.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\CVRSystem.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\ETrackingUniverseOrigin.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRInputError.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRHandTest.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VROverlayFlags.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRCompositionUtil.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\IVRSystem.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRGearVrControllerTest.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EChaperoneImportFlags.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VROverlayIntersectionMaskPrimitive_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRInputFilterCancelType.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\IVRExtendedDisplay.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\CVRChaperoneSetup.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\InputAnalogActionData_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRBoneCapsule.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\DistortionCoordinates_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRCursor.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\IVRChaperoneSetup.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\IntersectionMaskCircle_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRControllerTest.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\TrackedDevicePose_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRGazePointer.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\HmdMatrix33_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRVignette.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\InputPoseActionData_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\SpatialAnchorPose_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRTrackedCameraFrameType.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\IVROverlay.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRMeshRenderer.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_InputActionManifestLoad_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRSpatialAnchorError.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRManager.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\CVRScreenshots.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRComponentProperty.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\ECollisionBoundsStyle.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\UnityEngine\EventSystems\OVRPointerEventData.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\ChaperoneCalibrationState.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVRMixedReality.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\ETrackedDeviceProperty.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\CVRChaperone.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVREventType.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\EVRCompositorError.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VRMessageOverlayResponse.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\VREvent_ApplicationLaunch_t.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\CVRInput.cs" />
+    <Compile Include="Assets\Scripts\Oculus.VR\OVR\OpenVR\CVRCompositor.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Assets\Scripts\Oculus.VR\Oculus.VR.asmdef" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="UnityEngine">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.AIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ARModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.ARModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AccessibilityModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.AccessibilityModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AndroidJNIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.AndroidJNIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AnimationModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.AnimationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AssetBundleModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.AssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.AudioModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.AudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClothModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClothModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterInputModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterInputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ClusterRendererModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.ClusterRendererModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CrashReportingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.CrashReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DSPGraphModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.DSPGraphModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.DirectorModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.DirectorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.GIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GameCenterModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.GameCenterModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.GridModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.GridModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.HotReloadModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.HotReloadModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.JSONSerializeModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.JSONSerializeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.LocalizationModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.LocalizationModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ParticleSystemModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.ParticleSystemModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PerformanceReportingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.PerformanceReportingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.Physics2DModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.Physics2DModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ProfilerModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.ProfilerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.RuntimeInitializeOnLoadManagerInitializerModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ScreenCaptureModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.ScreenCaptureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SharedInternalsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.SharedInternalsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteMaskModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteMaskModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SpriteShapeModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.SpriteShapeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.StreamingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.StreamingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubstanceModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubstanceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.SubsystemsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.SubsystemsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TLSModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.TLSModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TerrainPhysicsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.TerrainPhysicsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreFontEngineModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextCoreTextEngineModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TextRenderingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.TextRenderingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.TilemapModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.TilemapModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UIElementsNativeModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.UIElementsNativeModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UNETModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.UNETModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UmbraModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.UmbraModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityAnalyticsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityAnalyticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityConnectModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityCurlModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityCurlModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityTestProtocolModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityTestProtocolModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAssetBundleModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAssetBundleModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestAudioModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestAudioModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestTextureModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestTextureModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UnityWebRequestWWWModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.UnityWebRequestWWWModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VFXModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.VFXModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VRModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.VRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VehiclesModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.VehiclesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VideoModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.VideoModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.VirtualTexturingModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.VirtualTexturingModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.WindModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.WindModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.XRModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEditor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.CoreModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEditor.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.DeviceSimulatorModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEditor.DeviceSimulatorModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.DiagnosticsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEditor.DiagnosticsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.GraphViewModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEditor.GraphViewModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.PackageManagerUIModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEditor.PackageManagerUIModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.QuickSearchModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEditor.QuickSearchModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.SceneTemplateModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEditor.SceneTemplateModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TextCoreFontEngineModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextCoreFontEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.TextCoreTextEngineModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEditor.TextCoreTextEngineModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIBuilderModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIBuilderModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIElementsSamplesModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIElementsSamplesModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UIServiceModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEditor.UIServiceModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UnityConnectModule">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEngine\UnityEditor.UnityConnectModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Graphs">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\Managed\UnityEditor.Graphs.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WebGL.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\PlaybackEngines\WebGLSupport\UnityEditor.WebGL.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\PlaybackEngines\AndroidPlayer\UnityEditor.Android.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.WindowsStandalone.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.iOS.Extensions.Common">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\PlaybackEngines\iOSSupport\UnityEditor.iOS.Extensions.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.Types">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Android.Gradle">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Gradle.dll</HintPath>
+    </Reference>
+    <Reference Include="netstandard">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Win32.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\Microsoft.Win32.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.AppContext">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.AppContext.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Buffers">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Concurrent">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.Concurrent.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.NonGeneric">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.NonGeneric.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Collections.Specialized">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Collections.Specialized.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.EventBasedAsync">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.EventBasedAsync.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.TypeConverter">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ComponentModel.TypeConverter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Console">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Console.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.Common">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Data.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Contracts">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Debug">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Debug.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.FileVersionInfo">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.FileVersionInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Process">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Process.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.StackTrace">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.StackTrace.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TextWriterTraceListener">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.TextWriterTraceListener.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tools">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Tools.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.TraceSource">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.TraceSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Diagnostics.Tracing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Drawing.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Dynamic.Runtime">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Dynamic.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.Calendars.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Globalization.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Globalization.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.ZipFile">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Compression.ZipFile.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.DriveInfo">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.DriveInfo.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Watcher">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.FileSystem.Watcher.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.IsolatedStorage">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.IsolatedStorage.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.MemoryMappedFiles">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.MemoryMappedFiles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Pipes">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.Pipes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.UnmanagedMemoryStream">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.IO.UnmanagedMemoryStream.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Expressions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Expressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Parallel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Linq.Queryable">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Linq.Queryable.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Memory">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NameResolution">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.NameResolution.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.NetworkInformation">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.NetworkInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Ping">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Ping.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Requests">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Requests.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Security">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Sockets">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.Sockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebHeaderCollection">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebHeaderCollection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets.Client">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebSockets.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.WebSockets">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Net.WebSockets.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics.Vectors">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ObjectModel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.DispatchProxy">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.DispatchProxy.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.ILGeneration">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.ILGeneration.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Emit.Lightweight">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Emit.Lightweight.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Reflection.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Reader">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.Reader.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.ResourceManager">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.ResourceManager.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Resources.Writer">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Resources.Writer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.VisualC">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.CompilerServices.VisualC.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Handles">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Handles.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.InteropServices.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Numerics">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Formatters">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Formatters.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Json">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Claims">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Claims.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Algorithms">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Csp">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Csp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Principal">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.Principal.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.SecureString">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Security.SecureString.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.Encoding.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.Encoding.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Text.RegularExpressions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Overlapped">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Overlapped.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Parallel">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Tasks.Parallel.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Thread">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Thread.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.ThreadPool">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.ThreadPool.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Threading.Timer">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Threading.Timer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ValueTuple">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.ValueTuple.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.ReaderWriter">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.ReaderWriter.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XDocument">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlDocument">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XmlDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XmlSerializer">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XmlSerializer.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XPath.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.XPath.XDocument">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netstandard\System.Xml.XPath.XDocument.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.WindowsRuntime">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\Extensions\2.0.0\System.Runtime.InteropServices.WindowsRuntime.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\mscorlib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.Composition">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ComponentModel.Composition.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="System">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.IO.Compression.FileSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Numerics">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Numerics.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Runtime.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ServiceModel.Web">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.ServiceModel.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Transactions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Windows">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Serialization">
+      <HintPath>C:\Program Files\Unity\Hub\Editor\2021.2.18f1\Editor\Data\NetStandard\compat\2.1.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="GenerateTargetFrameworkMonikerAttribute" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
